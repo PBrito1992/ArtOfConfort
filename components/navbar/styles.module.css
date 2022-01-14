@@ -1,0 +1,12 @@
+.navbar-open {
+  animation: animate-navbar-open 0.5s ease-in-out forwards;
+}
+
+@keyframes animate-navbar-open {
+  0% {
+    transform: translateX(-16rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
