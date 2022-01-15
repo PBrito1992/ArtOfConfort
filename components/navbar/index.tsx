@@ -14,15 +14,15 @@ const Navbar: FC<{ onClose: () => void }> = ({ onClose }) => {
       >
         &times;
       </span>
-      <ul className="flex flex-col items-center relative top-16 text-lg xl:text-2xl">
+      <ul className="flex flex-col items-start relative top-16 text-lg xl:text-2xl">
         <Link href="/about">
-          <a className="hover:underline">About</a>
+          <a className="hover:underline">Sobre</a>
         </Link>
         <Link href="/products">
-          <a className="hover:underline mt-4">Products</a>
+          <a className="hover:underline mt-4">Produtos</a>
         </Link>
         <Link href="/contacts">
-          <a className="hover:underline mt-4">Contacts</a>
+          <a className="hover:underline mt-4">Contactos</a>
         </Link>
       </ul>
     </nav>

@@ -21,7 +21,7 @@ const ContactsPage = () => {
         </div>
         <div className="h-full w-full xl:w-1/2 bg-gray-100 p-5 rounded flex flex-col items-center">
           <h3 className="uppercase font-extrabold">
-            Contactar a Art Of Confort
+            Contactar a Art Of Comfort
           </h3>
           <h4 className="text-sm text-gray-500 mt-1">
             Caso tenha alguma dúvida nós ajudamos
