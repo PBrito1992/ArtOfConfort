@@ -9,20 +9,14 @@ const AboutPage = () => {
         <div className="w-full md:w-1/2 flex flex-col justify-center">
           <h2 className="text-4xl font-bold">História</h2>
           <p className="mt-8 text-sm text-gray-600 leading-8">
-            A Antarte nasceu em 2000, como uma empresa dedicada às antiguidades
-            e à arte, nomeadamente ao restauro de peças antigas e à
-            comercialização de peças de mobiliário marcadas por um estilo mais
-            clássico. Estas duas áreas de intervenção determinaram, na época, a
-            génese da designação da própria marca, cujo nome resultou da fusão
-            de “antiguidade” com “arte”: Antarte.
-          </p>
-          <p className="mt-8 text-sm text-gray-600 leading-8">
-            Desde então, a marca trilhou um percurso singular no setor do
-            mobiliário e da decoração, onde encontrou um novo rumo, fruto das
-            exigências do mercado e dos respetivos clientes, que procuravam
-            produtos modernos com a qualidade Antarte. Desde então, a marca
-            soube amadurecer e tornou-se numa insígnia com caráter, prestigiada
-            e valorizada no mercado.
+            A Art of Comfort nasceu em 2012 como uma empresa dedicada à arte,
+            nomeadamente à construção de todo o tipo de decoração e mobiliário
+            possíveis de serem estufados como espelhos, camas, sofás, cadeiras e
+            cadeirões, marcado pelo detalhe, rigor e toque requintado. Desde
+            então, a marca continua a ser reconhecida por estas características
+            únicas que a definem pois contratamos profissionais com mais de 25
+            anos de experiência na área. Os nossos profissionais dão o melhor de
+            si pela sua felicidade.
           </p>
         </div>
         <Image
@@ -38,18 +32,19 @@ const AboutPage = () => {
         <div className="w-full md:w-1/2 flex flex-col justify-center order-1">
           <h2 className="text-4xl font-bold">Marca</h2>
           <p className="mt-8 text-sm text-gray-600 leading-8">
-            A Antarte é uma marca portuguesa, líder em tendências de mobiliário
-            e decoração em Portugal. Com uma rede de oito lojas em território
-            nacional, a Antarte é reconhecida pelas suas linhas inovadoras,
-            elegantes e adaptáveis aos mais variados tipos de espaço.
+            A Art of Comfort é uma marca portuguesa em que a fabricação dos seus
+            produtos são realizados no distrito do Porto. O que nos distingue é
+            essencialmente:
           </p>
-          <p className="mt-8 text-sm text-gray-600 leading-8">
-            Com fábrica própria, no norte de Portugal, a marca exporta os seus
-            produtos para vários mercados internacionais, com lojas próprias em
-            África do Sul, Angola, Ghana , Marrocos, São Tomé e Príncipe e mais
-            recentemente na costa do Marfim decorrente da sua estratégia de
-            expansão.
-          </p>
+          <ul className="text-sm text-gray-600 leading-8 list-disc list-inside ml-4">
+            <li>A qualidade-preço</li>
+            <li>A qualidade-produto</li>
+            <li>
+              A personalização de produtos à sua medida- ao nível de medidas,
+              materiais, design e cores
+            </li>
+            <li>Vasta oferta de paleta de cores, tecidos e texturas</li>
+          </ul>
         </div>
       </div>
     </div>

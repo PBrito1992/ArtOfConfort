@@ -13,7 +13,7 @@ const ProductItem: FC<ProductItemType> = ({
   description,
 }) => (
   <div className="w-full flex flex-col items-center cursor-pointer">
-    <div className="w-full">
+    <div className="w-full bg-product">
       <Image
         src={imageSrc}
         alt={imageAlt}

@@ -6,17 +6,21 @@ const ContactsPage = () => {
       </h1>
       <div className="h-full mt-16 flex flex-col xl:flex-row items-center">
         <div className="h-full w-full xl:w-1/2 order-2 xl:order-none mt-8 xl:mt-0 flex xl:flex-col justify-evenly xl:justify-start items-center">
-          <div>
+          <div className="w-full xl:w-1/3">
             <h3 className="text-center xl:text-left uppercase font-extrabold mb-2">
               Telefone
             </h3>
-            <span className="text-sm text-gray-600">+351 912 456 789</span>
+            <p className="text-sm text-center xl:text-left text-gray-600">
+              +351 910 609 340
+            </p>
           </div>
-          <div className="xl:mt-4">
+          <div className="xl:mt-4 w-full xl:w-1/3">
             <h3 className="text-center xl:text-left uppercase font-extrabold mb-2">
               E-mail
             </h3>
-            <span className="text-sm text-gray-600">email@email.com</span>
+            <p className="text-sm text-center xl:text-left text-gray-600">
+              geral.artofcomfort@gmail.com
+            </p>
           </div>
         </div>
         <div className="h-full w-full xl:w-1/2 bg-gray-100 p-5 rounded flex flex-col items-center">
