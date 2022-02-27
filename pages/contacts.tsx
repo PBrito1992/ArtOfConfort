@@ -25,6 +25,7 @@ const isContactsValid = (formValue: typeof contactInitialState) => {
 const ContactsPage = () => {
   const [contact, setContact] = useState(contactInitialState);
   const [formSubmited, setFormSubmited] = useState(false);
+  const [message, setMessage] = useState({ error: false, message: "" });
 
   const handleFieldChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -45,8 +46,24 @@ const ContactsPage = () => {
       method: "POST",
       headers: { "content-type": "application/json" },
     })
-      .then((resp) => console.log(resp))
-      .catch((error) => console.log(error));
+      .then((resp) => {
+        setContact(contactInitialState);
+        setFormSubmited(false);
+        setMessage({
+          error: false,
+          message:
+            "Email enviado com sucesso. Será contactado em breve. Obrigado",
+        });
+      })
+      .catch((error) => {
+        setContact(contactInitialState);
+        setFormSubmited(false);
+        setMessage({
+          error: true,
+          message:
+            "Erro durante enviado de email. Confirme os dados e em caso de dificuldade tente mais tarde. Obrigado",
+        });
+      });
   };
 
   return (
@@ -140,6 +157,15 @@ const ContactsPage = () => {
               >
                 Submeter
               </button>
+              {message.message && (
+                <p
+                  className={`mt-2 text-sm ${
+                    message.error ? "text-red-600" : " text-green-600"
+                  }`}
+                >
+                  *{message.message}
+                </p>
+              )}
             </form>
           </div>
         </div>
