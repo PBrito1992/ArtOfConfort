@@ -1,10 +1,16 @@
+import Head from "next/head";
 import ProductsList from "../components/products/productsList";
 
 const ProductsPage = () => {
   return (
-    <div className="p-5">
-      <ProductsList />
-    </div>
+    <>
+      <Head>
+        <title>Art of Comfort • Produtos</title>
+      </Head>
+      <div className="p-5">
+        <ProductsList />
+      </div>
+    </>
   );
 };
 
